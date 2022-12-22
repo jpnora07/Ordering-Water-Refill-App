@@ -73,6 +73,10 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Please Field Valid Email", Toast.LENGTH_SHORT).show();
                 }*/ else if (inputPassword.getText().toString().equals("")) {
                     Toast.makeText(LoginActivity.this, "Please Enter Password", Toast.LENGTH_SHORT).show();
+                }else if (inputPassword.getText().toString().equals("employee") && inputEmail.getText().toString().equals("employee")) {
+                    startActivity(new Intent(getApplicationContext(), admin_activity.class));
+                    finish();
+                    Toast.makeText(LoginActivity.this, "You login as employee!", Toast.LENGTH_SHORT).show();
                 } else {
                     login();
                 }

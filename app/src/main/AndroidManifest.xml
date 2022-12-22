@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".admin_activity"
+            android:label="Todays Order"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".LoginActivity"
             android:exported="false">
             <meta-data
@@ -27,15 +35,15 @@
         </activity>
         <activity
             android:name=".my_orders"
-            android:label="My Orders"
-            android:exported="false">
+            android:exported="false"
+            android:label="My Orders">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".MainActivity"
-
-            android:label="Add to cart"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="Add to cart" />
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".SplashActivity"
